@@ -1,0 +1,265 @@
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    background-color: #f5e1c8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    padding: 30px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f5e1c8;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    padding: 20px;
+    width: 100%;
+    background-color: #f5e1c8;
+}
+
+.intro-text {
+    flex: 1 1 300px;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.intro-text h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 20px;
+    color: #555;
+}
+
+.intro-text a {
+    text-decoration: none;
+}
+
+.intro-text button {
+    background-color: #5e493c;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Increased padding for bigger button */
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+    border-radius: 50px; /* Circular shape */
+    margin-top: 20px;
+}
+
+.intro-image {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.intro-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+.approach {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    padding: 20px;
+    width: 100%;
+    background-color: #f5e1c8;
+    margin: 0;
+}
+
+.approach-image {
+    flex: 1 1 300px;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.approach-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border: none;
+}
+
+.approach-text {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.approach-text h2 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.approach-text h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.approach-text p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.faq {
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f5e1c8;
+}
+
+.faq h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.faq-text {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0;
+}
+
+.faq-item .toggle {
+    font-size: 24px;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.faq-image {
+    flex: 1 1 300px;
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+.faq-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #f3e7dc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 24px;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact p {
+    margin: 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .approach {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .approach-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
